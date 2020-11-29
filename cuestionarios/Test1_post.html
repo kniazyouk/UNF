@@ -16,6 +16,36 @@
 			height: 0px;
 			margin: 6px;
 		}
+        
+        #closeScoreModal{
+        box-shadow: 3px 3px 1px rgba(255,0,0,0.3);
+        -webkit-box-shadow: 3px 3px 1px rgba(0,0,0,0.3);
+        -o-box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+        -moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+        }
+        #formToSave{
+            padding-top: 20px;
+        }
+        #firstname, #lastname{
+            padding: 10px;
+            width: 500px;
+            position: relative;
+            margin-top: 10px;
+            text-align: center;
+            box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+            -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+            -o-box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+            -moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.5);            
+        }
+        body{
+            background-color: rgba(218,90,0,0.5);
+        }
+        .force-overflow{
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
 	</style>
 
 	<script src="js/jquery-3.4.1.slim.min.js"></script>
@@ -65,8 +95,8 @@
 	</script>
     <link rel="stylesheet" href="../css/sss.css">
 </head>
-<body style="background-color: #ebf4d9 ">
- <div class="scrollbar" id="style-7">
+<body style="background-color: ">
+ <div cl="scrollbar" i="style-7">
       <div class="force-overflow">
 	    <form method="post" action="" id="formToSave" style="background-image: url(../images/cuestionario.png); background-size: cover;">
             <div class="container">
@@ -74,6 +104,8 @@
                     <div class="col-md-12">
                         <h1>Cuestionario del Módulo 1</h1>
                     </div>
+                    <input type="text" name="firstname" id="firstname" class="form-control" width="" pattern="[a-zA-Z]+" placeholder="Intuduzca su Nombre" required="required">
+				    <input type="text" name="lastname" id="lastname" class="form-control" width="" pattern="[a-zA-Z]+" placeholder="Intuduzca sus Apellidos" required="required">
                 </div>
                 <br>
                 <div class="row">
@@ -238,13 +270,13 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <input type="submit" id="btnEnviar" value="Enviar" data-toggle="modal" data-target="#myModal" class="btn btn-primary">
+                        <input type="submit" id="btnEnviar" value="Enviar" data-toggle="modal" data-target="#ModalScore" class="btn btn-primary">
                     </div>
                 </div>
             </div>
 	    </form>
 	    <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="ModalScore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div id="flotante" class="modal-content">
                     <div class="modal-header">
@@ -259,7 +291,7 @@
                         <span class="label label-default" id="lblPuntuacion2">* 8 o más puntos: ¿Excelente! Ahora estamos más preparadas/os para continuar apoyando a nuestras/os hijas e hijos.</span><br>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar para continuar</button>
+                        <button type="button" id="closeScoreModal" class="bubbly-button" onclick="window.location='../tesoro2/actividad1.html'"><a href="../tesoro2/actividad1.html">>Cerrar para continuar</button>
                     </div>
                 </div>
             </div>

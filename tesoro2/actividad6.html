@@ -21,7 +21,7 @@
 	<script src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		$(window).on('load', function () {
-			$('#myModal').modal('show');
+			$('#ModalOnload').modal('show');
 		});
 	</script>
 	<div id="global">
@@ -38,10 +38,17 @@
                 <button class="bubbly-button" role="link" onclick="window.location='actividad6.html'">ACTIVIDAD 5</button>
 			</div>
 		<div id="conten2">
-			<div id="test">
-				<iframe src="../Cuestionarios/Test2_post.html" style="border: 0; width: 100%; height: 100%"></iframe>
-			</div>
-
+			<!--<div id="test">
+				<iframe src="../cuestionarios/Test2_post.html" style="border: 0; width: 100%; height: 100%"></iframe>
+			</div>-->
+        <div id="contenedorcuestionario">
+            
+               <!-- Button trigger modal -->
+                <button type="button" id="test2" class="bubbly-button" onclick="abremodal()" style="width: 150px;height: 50px;" data-toggle="modal" data-target="#staticBackdrop">
+                  Continuar
+                </button>
+                
+                </div>
 		</div>
 		<div id="banner">
                 <button class="bubbly-button" role="link" onclick="window.location='../index.html'">Salir</button>
@@ -51,7 +58,7 @@
         
             </div>
 	</div>
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal fade" id="ModalOnload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div id="flotante" class="modal-content">
 				<div class="modal-header">

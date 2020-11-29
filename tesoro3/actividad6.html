@@ -21,7 +21,7 @@
 	<script src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		$(window).on('load', function () {
-			$('#myModal').modal('show');
+			$('#ModalOnload').modal('show');
 		});
 	</script>
 	<div id="global">
@@ -40,8 +40,12 @@
 		<div id="conten2">
 			<div id="contenedorcuestionario">
             <!--para el tema del video hay q hacer video por video un js-->
-             <div id=""  onclick="abremodal();"><button class="bubbly-button" style="width: 150px;height: 50px;">Continuar</button> </div>
-            
+             <!--<div id=""  onclick="abremodal();"><button class="bubbly-button" style="width: 150px;height: 50px;">Continuar</button> </div>-->
+            <!-- Button trigger modal -->
+                <button type="button" id="test1" class="bubbly-button" onclick="abremodal()" style="width: 150px;height: 50px;" data-toggle="modal" data-target="#staticBackdrop">
+                  Continuar
+                </button>
+                
                 </div>
 
 		</div>
@@ -53,7 +57,7 @@
         
             </div>
 	</div>
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal fade" id="ModalOnload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div id="flotante" class="modal-content">
 				<div class="modal-header">
