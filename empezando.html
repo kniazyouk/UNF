@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="">
+	<title>Curso UNF</title>
+	<!--<link rel="stylesheet" href="css/normaliza.css">
+	<link rel="stylesheet" href="css/style.css">-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilosf.css">
+</head>
+<body style="background-color:#0028B0">
+	<script src="js/jquery-3.4.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/base64.js"></script>
+	<!--
+	<script>
+		function guardarDatos() {
+			localStorage.Familia = document.getElementById("nombreFamilia").value;
+			localStorage.Nombre = document.getElementById("nombresApellidos").value;
+			localStorage.Edad = document.getElementById("edad").value;
+			var e = document.getElementById("rol");
+			var strUser = e.options[e.selectedIndex].value;
+			localStorage.Rol = strUser;
+
+			if ((localStorage.Familia != "") && (localStorage.Nombre != "")) {
+				document.getElementById("datos").innerHTML = "Bienvenido " + localStorage.Familia + " " + localStorage.Nombre + " presione el boton Continuar para seguir con el curso";
+				document.getElementById("btnContinuar").disabled = false;
+			}
+			else {
+				document.getElementById("datos").innerHTML = "Debe llenar los campos para continuar";
+				document.getElementById("btnContinuar").disabled = true;
+			}
+		}
+		function Salir() {
+			localStorage.clear();
+			//this.close();
+		}
+		function Continuar() {
+			window.location = "intro.html"
+		}
+	</script>-->
+   
+    <div id="banner">
+        
+        </div>
+    <div id="nav">
+        
+        </div>
+    <div id="conte">
+    
+	<div class="container">
+		
+		<div>
+			<br>
+			<div>
+				<font color="white" class="text-center">
+					<h3>Bienvenidas y bienvenidos al curso</h3>
+					<h1>Educacion integral </h1>
+					<h1>de la sexualidad en familia</h1>
+                    
+				</font>
+			</div>
+			<div id="contenido">
+                
+				<div class="row">
+                    
+					<div class="col-md-2">
+                        
+					</div>
+					<div class="col-md-8" style="background-color: #ffcc33"><center><h4>Inicia este proceso registrando tus datos en el cuadro que te presentamos a continuación:</h4></center>
+						<br>
+						<form action="sendReg.php"  method="post">
+                            <div class="row">
+                                <div class="col-md-4 text-right">
+                                    <label for="nombreFamilia" class="label label-default">Nombres:</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="name" id="nombre" class="form-control" pattern="[a-zA-Z' ']+" required="required" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 text-right">
+                                    <label for="nombresApellidos">Apellidos:</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="lastname" id="apellidos" class="form-control" pattern="[a-zA-Z]+" required="required" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 text-right">
+                                    <label for="edad">Edad:</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="number" name="age" id="edad" min="1" max="100"  maxlength="2" class="form-control" required="required" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 text-right">
+                                    <label for="rol">Rol en la familia:</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <select id="rol" name="rol" class="form-control" required="required">
+                                        <option value="Madre">Madre</option>
+                                        <option value="Padre">Padre</option>
+                                        <option value="Hijo">Hija / Hijo</option>
+                                        <option value="Primo">Prima / Primo</option>
+                                    </select>
+                                </div>
+                            </div>
+                            </br>
+                            <div class="row">
+                                <div class="col-md-5">
+                                </div>
+                                <div class="col-md-2" >
+                                    <input type="submit" onclick="guardarDatos()" value="Inscribir" class="btn btn-primary btn-lg btn-block" style="background-color: #0033cc;" />
+                                </div>
+						    </div>
+						</form>
+						<br>
+						<div>
+							<center>
+							 <img src="aviso.png">
+							</center>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								<p id="datos"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<a href="index.html" style="text-decoration: none;color: white;"><button type="button" onclick="Salir()" class="btn btn-outline-warning btn-lg btn-block" style="background-color: #ff9900;color:white;" href=index.html>Salir</button></a>
+					</div>
+					<div class="col-md-8">
+					</div>
+					<div class="col-md-2">
+						<button type="button" id="btnContinuar" class="btn btn-outline-warning btn-lg btn-block" onclick="Continuar()" disabled style="background-color: #ff9900;color:white;">Continuar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+        
+        </div>
+    <div id="banner">
+        
+        </div>
+</body>
+</html>

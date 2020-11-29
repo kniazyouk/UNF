@@ -1,0 +1,193 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a{
+    margin: none;
+    color: white;
+    text-decoration: none;
+    
+}
+
+body {
+	background-image: ;
+	background-color: #FFFFCC;
+	background-size: cover;
+	font-family: sans-serif;
+	margin: 0 auto;
+}
+
+
+#banner {
+    background-image: url(../images/cabecera.png);
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#banner h1 {
+    color: white;
+    text-shadow: 2px 2px 2px blue;
+    text-transform: none;
+}
+
+#nav {
+    background-color: #de9824;
+    background-size: cover;
+    width: 100%;
+    height:50px;    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow: inset 0px 3px 16px 0px rgba(0,0,0,0.68);
+    -moz-box-shadow: inset 0px 3px 16px 0px rgba(0,0,0,0.68);
+    box-shadow: inset 0px 3px 16px 0px rgba(0,0,0,0.68);
+}
+
+#navt {
+    background-color: #69177a;
+    background-size: cover;
+    width: 100%;
+    height:50px;    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow: inset 0px 3px 16px 0px rgba(0,0,0,0.68);
+    -moz-box-shadow: inset 0px 3px 16px 0px rgba(0,0,0,0.68);
+    box-shadow: inset 0px 3px 16px 0px rgba(0,0,0,0.68);
+}
+
+#nav2 h1 {
+    font-size: 100%;
+    color: white;    
+    
+}
+
+#nav2 {
+    background-color: #de9824;
+    background-image: url(../images/naveg.png);
+    background-size: cover;
+    width: 100%;
+    height:50px;    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow: inset 0px 3px 16px 0px rgba(0,0,0,0.68);
+    -moz-box-shadow: inset 0px 3px 16px 0px rgba(0,0,0,0.68);
+    box-shadow: inset 0px 3px 16px 0px rgba(0,0,0,0.68);
+}
+
+#n1 {
+    width: 40%;
+    padding-left: 8%;
+}
+
+#n1 h1 {
+    color: #0033cc;
+}
+
+#n2 {
+    width: 60%;
+    padding-left: 9%;
+}
+
+#conte {
+    background-color: #FFFFCC;
+    background-size: contain;
+    width: 100%;
+    height: 719px;
+    justify-content: center;
+    display: flex;
+}
+
+#conte h3 {
+    color:#0033cc;
+    
+}
+#conte h1 {
+    color:#0033cc;
+    
+}
+#conten {
+    background-image: url(../images/conten.png);
+    background-size: contain;
+    width: 100%;
+    height: 719px;
+    justify-content: center;
+    display: flex;
+}
+#conten2 {
+    background-image: url(../images/conten2.png);
+    background-size: cover;
+    width: 100%;
+    height: 719px;
+    justify-content: center;
+    display: flex;
+}
+
+
+/*botones navegacion*/
+.bubbly-button {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  font-size: 90%;
+  font-weight: bold;
+  width:10%;   
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #ff9900;
+  color: white; 
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 5px 5px 0px #334CFF;
+  margin-left:2%;
+  height: 50%
+}
+.bubbly-button:focus {
+  outline: 0;
+}
+.bubbly-button:before, .bubbly-button:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+.bubbly-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #ff9900 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff9900 20%, transparent 30%), radial-gradient(circle, #ff9900 20%, transparent 20%), radial-gradient(circle, #ff9900 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff9900 15%, transparent 20%), radial-gradient(circle, #ff9900 20%, transparent 20%), radial-gradient(circle, #ff9900 20%, transparent 20%), radial-gradient(circle, #ff9900 20%, transparent 20%), radial-gradient(circle, #ff9900 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+.bubbly-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #ff9900 20%, transparent 20%), radial-gradient(circle, #ff9900 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff9900 15%, transparent 20%), radial-gradient(circle, #ff9900 20%, transparent 20%), radial-gradient(circle, #ff9900 20%, transparent 20%), radial-gradient(circle, #ff9900 20%, transparent 20%), radial-gradient(circle, #ff9900 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+.bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #e60074;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+.bubbly-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+.bubbly-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+/*fin botonera*/
