@@ -19,7 +19,7 @@ $message .= "edad es: " . $age . " \r\n";
 $message .= "Rol en la familia es: " . $_POST['rol'] . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
-$para = 'kniazyouk@gmail.com';
+$para = 'sejascrespo@unfpa.org';
 $asunto = 'Mensaje de UNF';
 
 mail($para, $asunto, utf8_decode($message), $header);
