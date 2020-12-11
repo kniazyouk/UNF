@@ -1,6 +1,6 @@
 <?php
 
-$email = 'UNF_TEST1';
+$email = 'UNF';
 $name = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 
@@ -26,13 +26,13 @@ $header .= "Content-Type: text/plain";
 
 $message = "Nombres son: " . $name . " \r\n";
 $message .= "Apellidos son: " . $lastname . " \r\n";
-$message .= "edad es: " . $score . " \r\n";
+$message .= "Puntaje es: " . $score . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
-//$para = 'sejascrespo@unfpa.org';
-$asunto = 'Pre-Test 1';
+$para = 'sejascrespo@unfpa.org';
+$asunto = 'Post-Test 3';
 
 mail($para, $asunto, utf8_decode($message), $header);
 
-header("Location:array.php");
+//header("Location:../meta/Meta.html");
 ?>

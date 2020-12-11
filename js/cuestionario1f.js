@@ -1,5 +1,5 @@
 function abremodal(){
-    location.href = "../cuestionarios/Test1_post.html"
+    location.href = "../cuestionarios/postTest1.php"
 };
 
 

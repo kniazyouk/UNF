@@ -1,3 +1,12 @@
+<!--
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+ * Version: 1.0
+ * Author: Kniaz Youk
+ * License: Creative Commons Attribution 3.0 License
+ * Github: https://github.com/kniazyouk
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+-->
+
 <?php
 
 $email = 'UNF';
@@ -15,7 +24,7 @@ $header .= "Content-Type: text/plain";
 
 $message = "Nombres son: " . $name . " \r\n";
 $message .= "Apellidos son: " . $lastname . " \r\n";
-$message .= "edad es: " . $age . " \r\n";
+$message .= "Edad es: " . $age . " \r\n";
 $message .= "Rol en la familia es: " . $_POST['rol'] . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
